@@ -1,0 +1,30 @@
+The file contains documentation and tests for compiling and running the C++ source code of a function, to read in a list of images from a text file. 
+
+1) The name of the file containing the source code is function.cc. 
+
+2) The tests are in the shell script file functiontests.sh.
+
+3) The compiler is g++.
+
+4) The input to the function is the directory path containing the text file from which the image file name per line is to be read and must be specified as an argument to the test script. 
+
+5) At the directory location specified by path,  a file with name textfile.txt is read, containing image filename per line .
+
+6) Each line contains a relative path to the path specified as input, for e.g., ../../2.png
+../../example/5.png
+../../2.ppm
+../../5.ppm
+
+7) To run the various tests along with the function in an open terminal (i.e. command prompt) the command is 
+./functiontests.sh function.cc $path  .
+
+Tests which can be run by uncommenting from the functiontests.sh file are: 
+a) non existent file test.
+b) empty file test.
+c) line validiy test.
+d) multiple process test. 
+e) special permission requirement test. 
+f) directory test.  
+
+8) The name of each test and its corresponding output, along with the output of the function , will be displayed on the same terminal.For viewing purpose, the output of the function is relative path of the file specifying the image to be read and its corresponding absolute filename. 
+ 
